@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt  # Used to make bar graphs
 
 
 def get_name(roll_number, division='SE CMPN A'):
-    names = pd.read_excel("Class Information/"+division+".xlsx", index_col=0)
+    names = pd.read_excel("Class Information/" + division + ".xlsx", index_col=0)
     return names.loc[roll_number, 'Name']
 
 
